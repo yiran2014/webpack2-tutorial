@@ -10,7 +10,7 @@ let base = {
 module.exports = {
   entry:base,
   output: {
-  	path: path.resolve(__dirname, 'dist'),
+  	path: path.resolve(__dirname, 'mdist'),
     filename: '[name].js'
   },
   module:{
