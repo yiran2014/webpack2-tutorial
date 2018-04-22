@@ -27,6 +27,6 @@ module.exports = {
     //hash位数
   	hashDigestLength:2,
     //导出文件
-    filename: '[name].js'
+    filename: '_[name].js'
   }
 };
