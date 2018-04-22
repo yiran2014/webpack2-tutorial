@@ -11,11 +11,6 @@ module.exports = {
   output: {
     //导出目录个性化
   	path: path.resolve(__dirname, 'uuudist'),  //path为绝对路径
-
-
-  	//dist导出给别人用时，包规范格式
-  	libraryTarget:'umd',  //包规范，兼容了commonjs规范、amd规范、浏览器
-  	library: "MyLibrary", //定义了变量 去拿这个包 var MyLibrary=...
     
     
 
@@ -25,14 +20,20 @@ module.exports = {
 
     //导出文件个性化
     hashDigestLength:5,  //指定了chunkhash的hash值得位数
+  //  filename: '[chunkhash]_[name].js',  
     filename: '_[name].js',  
-    //以上指定方式也可以直接写成这样  '[chunkhash:3]_[name].js'
+    //以上指定方式也可以直接写成这样  '[chunkhash:5]_[name].js'
+
+
+    //dist导出给别人用时，包规范格式
+    libraryTarget:'umd',  //包规范，兼容了commonjs规范、amd规范、浏览器
+    library: "MyLibrary", //定义了变量 去拿这个包 var MyLibrary=...
 
 
     //用来作异步加载时的前缀
-    publicPath: "/output/uuudist/", //server-relative  
+    publicPath: "/output/uuudist2/", //publicPath是异步加载文件的前缀  
     //文件名
-    chunkFilename:'[chunkhash]_[name].js'
+    chunkFilename:'[chunkhash]_[name].js'  //chunkFilename是用来异步加载的
 
   }
 };

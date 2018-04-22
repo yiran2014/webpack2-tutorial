@@ -4,7 +4,7 @@ webpackJsonpMyLibrary([0,1],[
 
 console.log('index54245234451.js');
 
-module.exports =1
+//module.exports =1
 
 /***/ })
 ]);

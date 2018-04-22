@@ -96,7 +96,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + {"0":"93c25"}[chunkId] + "_" + ({"0":"dynamic"}[chunkId]||chunkId) + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + {"0":"f5642"}[chunkId] + "_" + ({"0":"dynamic"}[chunkId]||chunkId) + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -149,7 +149,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/output/uuudist/";
+/******/ 	__webpack_require__.p = "/output/uuudist2/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
@@ -167,10 +167,10 @@ console.log('I am index')
 
 //require.ensure(dependencies: String[], callback: function(require), chunkName: String)
 
-//用来作异步加载
+//require.ensure形式像amd，用来作异步加载
 __webpack_require__.e/* require.ensure */(0).then(((require)=>{
-	__webpack_require__(0)
-}).bind(null, __webpack_require__)).catch(__webpack_require__.oe)
+	__webpack_require__(0)  //动态加载依赖的模块
+}).bind(null, __webpack_require__)).catch(__webpack_require__.oe)  //指定文件名
 
 /***/ })
 /******/ ]);
