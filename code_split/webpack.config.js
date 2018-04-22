@@ -17,7 +17,7 @@ module.exports = {
   entry:base,
   output: {
     //导出目录
-  	path: path.resolve(__dirname, 'ttdist'),
+  	path: path.resolve(__dirname, 'dist'),
     publicPath: "/dist/", // server-relative
   	//包规范格式
   	libraryTarget:'umd',
